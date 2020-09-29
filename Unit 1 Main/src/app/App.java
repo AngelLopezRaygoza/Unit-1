@@ -1,23 +1,28 @@
 package app;
-import java.util.Scanner;
+
 
 public class App {
     public static void main(String[] args) throws Exception {
-      
-        Scanner input = new Scanner(System.in);
+      int count = 0;
+      String color = "blue";
+      boolean truOrFal = false; 
 
-        System.out.println("Enter a pizza topping");
-        String pizzTopp = input.nextLine();
-        System.out.println("Enter your favorite food");
-        String favFood = input.nextLine();
-        System.out.println("Enter healthy food");
-        String heaFoo = input.nextLine(); 
-        System.out.println("Enter name of person");
-        String namPer = input.nextLine();
-        System.out.println("Enter a noun");
-        String noun = input.nextLine();
+        while (count <= 15) {
+            System.out.println("The count is " + count);
+            count = count + 1;
+        }
+        System.out.println("Count finished");
 
-        System.out.println("Sam really likes " + pizzTopp + " pizza." + " But he likes " + favFood + " even more." + " He knows he should eat more " + heaFoo + ". " + namPer + " has told him so." + " Even the " + noun + " in his bathroom." + " Uh, oh.");
+        while (color == "blue") {
+            System.out.println("The color is " + color);
+            color = "yellow";
+        }
+        System.out.println("Color finished");
 
+        while (truOrFal = false) {
+            System.out.println("I like programming is" + truOrFal);
+            truOrFal = true; 
+        }
+        System.out.println("Statement finished");
     }
 }
