@@ -1,28 +1,32 @@
 package app;
+import java.util.Scanner;
 
 
 public class App {
     public static void main(String[] args) throws Exception {
-      int count = 0;
-      String color = "blue";
-      boolean truOrFal = false; 
+        Scanner input = new Scanner(System.in);
+        
+        int count = 0;
+        
+        System.out.println("Enter a color");
+        String color = input.nextLine();
 
-        while (count <= 15) {
-            System.out.println("The count is " + count);
+        System.out.println("Enter a number");
+        int number = input.nextInt(); 
+        System.out.println(" ");
+
+        while (count <= number) {
+            System.out.println(color);
             count = count + 1;
         }
-        System.out.println("Count finished");
 
-        while (color == "blue") {
-            System.out.println("The color is " + color);
-            color = "yellow";
-        }
-        System.out.println("Color finished");
 
-        while (truOrFal = false) {
-            System.out.println("I like programming is" + truOrFal);
-            truOrFal = true; 
-        }
-        System.out.println("Statement finished");
+        
+        
+
+
+
+
+
     }
 }
