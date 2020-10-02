@@ -5,19 +5,30 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
-        
-        int count = 0;
-        
-        System.out.println("Enter a color");
-        String color = input.nextLine();
 
-        System.out.println("Enter a number");
-        int number = input.nextInt(); 
-        System.out.println(" ");
+        for (int i = 10; i <= 20; i = i +1) {
+            System.out.println("The count is " + i);
+            System.out.println("Lets keep counting.");
+        }
 
-        while (count <= number) {
-            System.out.println(color);
-            count = count + 1;
+        for (int i = 10; i <= 100; i = i +1) {
+            System.out.println("The count is " + i);
+            System.out.println("Lets keep counting.");
+        }
+
+        for (int i = 1000; i <= 256000; i = i +1) {
+            System.out.println("The count is " + i);
+            System.out.println("Lets keep counting.");
+        }
+
+        for (int i = 11; i <= 12; i = i +1) {
+            System.out.println("The count is " + i);
+            System.out.println("Lets keep counting.");
+        }
+
+        for (int i = 10; i >= 0; i = i -1) {
+            System.out.println("The count is " + i);
+            System.out.println("Lets keep counting.");
         }
 
 
