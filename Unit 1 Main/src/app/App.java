@@ -6,58 +6,33 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Where is the Great Barrier Reef located?");
-        String answer1 = input.nextLine();
-        String correctAnswer1 = "Australia";
-        if (answer1.equals(correctAnswer1)){
-            System.out.println("Correct"); 
-        } else {
-            System.out.println("Incorrect");
-        }
-        System.out.println("Which country gifted the Statue of Liberty to the US?");
-        String answer2 = input.nextLine();
-        String correctAnswer2 = "France";
-        if (answer2.equals(correctAnswer2)){
-            System.out.println("Correct");
-        } else {
-            System.out.println("Incorrect");
-        }
-        System.out.println("What is the name of the longest river in South America?");
-        String answer3 = input.nextLine();
-        String correctAnswer3 = "Amazon River";
-        if (answer3.equals(correctAnswer3)){
-            System.out.println("Correct");
-        } else {
-            System.out.println("Incorrect");
-        }
-        System.out.println("In which movie is the villain \"Clayton\" from?");
-        String answer4 = input.nextLine();
-        String correctAnswer4 = "Tarzan";
-        if (answer4.equals(correctAnswer4)){
-            System.out.println("Correct");
-        } else {
-            System.out.println("Incorrect");
-        }
-        System.out.println("In which ocean is the Bermuda Traingle located?");
-        String answer5 = input.nextLine();
-        String correctAnswer5 = "Atlantic Ocean";
-        if (answer5.equals(correctAnswer5)){
-            System.out.println("Correct");
-        } else {
-            System.out.println("Incorrect");
-        }
+        System.out.println("Welcome to dog facts, please choose a fact (1-5)");
+       
+        String numEnt = input.nextLine();
 
-        int score = 0;
+        String num1 = "1";
+        String num2 = "2";
+        String num3 = "3";
+        String num4 = "4";
+        String num5 = "5";
 
-        if (answer1.equals(correctAnswer1)) score++;
-        if (answer2.equals(correctAnswer2)) score++;
-        if (answer3.equals(correctAnswer3)) score++;
-        if (answer4.equals(correctAnswer4)) score++;
-        if (answer5.equals(correctAnswer5)) score++;
-
-        System.out.println("Your score is " + score + "/5");
-
-        System.out.println("Percent out of a hundred: " + score*20 + "%"); 
-
+        if (numEnt.equals(num1)) {
+            System.out.println("A dog’s nose print is unique, much like a person’s fingerprint.");
+        }
+        else if (numEnt.equals(num2)) {
+            System.out.println("Forty-five percent of U.S. dogs sleep in their owner’s bed.");
+        }
+        else if (numEnt.equals(num3)) {
+            System.out.println("Seventy percent of people sign their dog’s name on their holiday cards.");
+        }
+        else if (numEnt.equals(num4)) {
+            System.out.println("The shape of a dog’s face suggests its longevity: A long face means a longer life.");
+        }
+        else if (numEnt.equals(num5)) {
+            System.out.println("Human blood pressure goes down when petting a dog. And so does the dog’s.");
+        }
+        else {
+            System.out.println("There was an error");
+        }
     }
 }
