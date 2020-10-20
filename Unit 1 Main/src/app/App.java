@@ -6,33 +6,45 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Welcome to dog facts, please choose a fact (1-5)");
-       
-        String numEnt = input.nextLine();
+        
+        for (int i = 0; i <= 1000; i++) {
+            System.out.println(i);
+        }
 
-        String num1 = "1";
-        String num2 = "2";
-        String num3 = "3";
-        String num4 = "4";
-        String num5 = "5";
+        System.out.println("Enter the correct password for the secret message");
+        System.out.println("(Hint, it's four numbers long).");
+        
+        int i = 0;
 
-        if (numEnt.equals(num1)) {
-            System.out.println("A dog’s nose print is unique, much like a person’s fingerprint.");
-        }
-        else if (numEnt.equals(num2)) {
-            System.out.println("Forty-five percent of U.S. dogs sleep in their owner’s bed.");
-        }
-        else if (numEnt.equals(num3)) {
-            System.out.println("Seventy percent of people sign their dog’s name on their holiday cards.");
-        }
-        else if (numEnt.equals(num4)) {
-            System.out.println("The shape of a dog’s face suggests its longevity: A long face means a longer life.");
-        }
-        else if (numEnt.equals(num5)) {
-            System.out.println("Human blood pressure goes down when petting a dog. And so does the dog’s.");
+        String passwordGuess = input.nextLine();
+
+        String correctPassword = "1234";
+
+        if (passwordGuess.equals(correctPassword)) {
+            System.out.println("Why are we still here? Just to suffer? Every night, I can feel my leg… and my arm… even my fingers. The body I’ve lost… the comrades I’ve lost… won’t stop hurting… It’s like they’re all still there. You feel it, too, don’t you?");
         }
         else {
-            System.out.println("There was an error");
+            System.out.println("Incorrect password, please try again");
+        if (i <= 0);{ 
+        String passwordGuess2 = input.nextLine();
+        if (passwordGuess2.equals(correctPassword)) {
+            System.out.println("Why are we still here? Just to suffer? Every night, I can feel my leg… and my arm… even my fingers. The body I’ve lost… the comrades I’ve lost… won’t stop hurting… It’s like they’re all still there. You feel it, too, don’t you?");
         }
-    }
+        else {
+            System.out.println("Incorrect password, please try again");
+        
+        
+        if (i <= 0);{ 
+        String passwordGuess3 = input.nextLine();
+        if (passwordGuess3.equals(correctPassword)) {
+            System.out.println("Why are we still here? Just to suffer? Every night, I can feel my leg… and my arm… even my fingers. The body I’ve lost… the comrades I’ve lost… won’t stop hurting… It’s like they’re all still there. You feel it, too, don’t you?");
+        }
+        else {
+            System.out.println("Incorrect password");
+        }
+        }
+}
+}   
+}
+}
 }
